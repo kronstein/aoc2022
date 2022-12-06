@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Initial commit.">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day05_1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day05_2.kt" afterDir="false" />
+    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 5.">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day06_1.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,21 +51,7 @@
       <recent name="C:\Users\admin\IdeaProjects\AoC2022\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day05_2Kt">
-    <configuration name="Day03_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day03_2Kt" />
-      <module name="AoC2022.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day04_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day04_1Kt" />
-      <module name="AoC2022.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day06_2Kt">
     <configuration name="Day04_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day04_2Kt" />
       <module name="AoC2022.main" />
@@ -88,13 +73,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day06_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day06_1Kt" />
+      <module name="AoC2022.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day06_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day06_2Kt" />
+      <module name="AoC2022.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Day05_2Kt" />
+        <item itemvalue="Kotlin.Day06_2Kt" />
+        <item itemvalue="Kotlin.Day06_1Kt" />
         <item itemvalue="Kotlin.Day05_1Kt" />
+        <item itemvalue="Kotlin.Day05_2Kt" />
         <item itemvalue="Kotlin.Day04_2Kt" />
-        <item itemvalue="Kotlin.Day04_1Kt" />
-        <item itemvalue="Kotlin.Day03_2Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670149420529</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Day 5.">
+      <created>1670242039761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670242039761</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="Day 5." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 5." />
   </component>
 </project>
