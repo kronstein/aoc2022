@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 6.">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day07_1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day07_2.kt" afterDir="false" />
+    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 7.">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day08_1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day08_2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,21 +52,7 @@
       <recent name="C:\Users\admin\IdeaProjects\AoC2022\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day07_2Kt">
-    <configuration name="Day05_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day05_1Kt" />
-      <module name="AoC2022.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day06_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day06_1Kt" />
-      <module name="AoC2022.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day08_2Kt">
     <configuration name="Day06_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day06_2Kt" />
       <module name="AoC2022.main" />
@@ -88,13 +74,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day08_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day08_1Kt" />
+      <module name="AoC2022.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day08_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day08_2Kt" />
+      <module name="AoC2022.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day08_2Kt" />
+        <item itemvalue="Kotlin.Day08_1Kt" />
         <item itemvalue="Kotlin.Day07_2Kt" />
         <item itemvalue="Kotlin.Day07_1Kt" />
         <item itemvalue="Kotlin.Day06_2Kt" />
-        <item itemvalue="Kotlin.Day06_1Kt" />
-        <item itemvalue="Kotlin.Day05_1Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670328577157</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Day 7.">
+      <created>1670402651870</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670402651870</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,18 +153,8 @@
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Day 5." />
     <MESSAGE value="Day 6." />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 6." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Day07_2.kt</url>
-          <line>39</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Day 7." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 7." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AoC2022$Day07_1Kt.ic" NAME="Day07_1Kt Coverage Results" MODIFIED="1670398947444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
