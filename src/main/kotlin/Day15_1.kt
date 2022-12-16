@@ -1,4 +1,6 @@
 import kotlin.math.abs
+import kotlin.math.max
+import kotlin.math.min
 
 data class SensorBeacon(
     val sx: Int,
@@ -16,6 +18,21 @@ data class SensorBeacon(
         return result
     }
 
+    fun isInside(x: Int, y: Int): Boolean = abs(sy - y) + abs(sx - x) <= distance
+
+    inline fun scanBounds(onBound: (Int, Int) -> Unit) {
+        for(c in 0..distance) {
+            val d = distance - c
+            val x1 = sx + c
+            val y1 = sy + d + 1
+            val y2 = sy - d - 1
+            onBound(x1, y1)
+            onBound(x1, y2)
+        }
+        onBound(sx - distance - 1, sy)
+        onBound(sx + distance + 1, sy)
+    }
+
     val distance by lazy { abs(sy - by) + abs(sx - bx) }
 }
 
@@ -24,19 +41,16 @@ fun main() {
         val (sx, sy, bx, by) = "Sensor at x=(.?\\d+), y=(.?\\d+): closest beacon is at x=(.?\\d+), y=(.?\\d+)".toRegex().find(line)!!.destructured
         SensorBeacon(sx.toInt(), sy.toInt(), bx.toInt(), by.toInt())
     }
-    val strongest = sensors.filter { m ->
-        sensors.filter { it.bx == m.bx && it.by == m.by }.mapNotNull { if (it == m) null else it }.isNotEmpty()
-    }.sortedByDescending { it.distance }
 
     val row = 2000000
     val common = mutableSetOf<Int>()
-    strongest.forEach {
+    sensors.forEach {
         common.addAll(it.scanRow(row))
     }
-    strongest.filter { it.by == row }.forEach {
+    sensors.filter { it.by == row }.forEach {
         common.remove(it.bx)
     }
-    strongest.filter { it.sy == row }.forEach {
+    sensors.filter { it.sy == row }.forEach {
         common.remove(it.sx)
     }
 
