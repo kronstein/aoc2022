@@ -81,13 +81,14 @@ fun turn(
     all: Map<String, Valve>,
     open: Set<Valve>,
     path: Path,
+    lastMinute: Int = 30
 ): Path {
     val sorted = all.values.filter { !open.contains(it) && current != it && it.rate > 0 }
 
-    if (sorted.isEmpty() || minutes == 30) {
+    if (sorted.isEmpty() || minutes == lastMinute) {
         return Path(
-            flowSoFar = path.flowSoFar + (30 - minutes) * open.sumOf { it.rate },
-            history = path.history + List(31 - minutes) { index -> MinuteInfo.Stay(minutes + index, open, current) },
+            flowSoFar = path.flowSoFar + (lastMinute - minutes) * open.sumOf { it.rate },
+            history = path.history + List(lastMinute + 1 - minutes) { index -> MinuteInfo.Stay(minutes + index, open, current) },
         )
     }
 
@@ -99,7 +100,7 @@ fun turn(
         )
     }.filter { pair ->
         val (_, time) = pair
-        time + minutes < 29
+        time + minutes < lastMinute - 1
     }.map { pair ->
         val (target, time) = pair
         turn(
@@ -116,8 +117,8 @@ fun turn(
         )
     }.maxByOrNull { it.flowSoFar } ?:
         Path(
-            flowSoFar = path.flowSoFar + (30 - minutes) * open.sumOf { it.rate },
-            history = path.history + List(31 - minutes) { index -> MinuteInfo.Stay(minutes + index, open, current) },
+            flowSoFar = path.flowSoFar + (lastMinute - minutes) * open.sumOf { it.rate },
+            history = path.history + List(lastMinute + 1 - minutes) { index -> MinuteInfo.Stay(minutes + index, open, current) },
         )
 }
 
