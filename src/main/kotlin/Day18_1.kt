@@ -3,14 +3,30 @@ import kotlin.math.abs
 data class Cube(
     val pos: List<Int>,
 ) {
-    fun isAdjancent(cube: Cube): Boolean {
-        val count = cube.pos.zip(pos).sumOf { abs(it.first - it.second) }
-        return when (count) {
+    fun isAdjacent(cube: Cube): Boolean {
+        return when (val count = cube.pos.zip(pos).sumOf { abs(it.first - it.second) }) {
             1 -> true.also {
                 println("this=$pos other=${cube.pos} ==YE== $count")
             }
             else -> false.also {
                 println("this=$pos other=${cube.pos} ==NO== $count")
+            }
+        }
+    }
+}
+
+data class XYZ(
+    val x: Int,
+    val y: Int,
+    val z: Int,
+) {
+    fun isAdjacent(xyz: XYZ): Boolean {
+        return when (val count = abs(x - xyz.x) + abs(y - xyz.y) + abs(z - xyz.z)) {
+            1 -> true.also {
+                println("this=$this other=${xyz} ==YE== $count")
+            }
+            else -> false.also {
+                println("this=$this other=${xyz} ==NO== $count")
             }
         }
     }
@@ -27,7 +43,7 @@ fun main() {
     var sides = cubes.size * 6
     for(i in cubes.indices) {
         for(j in i + 1 until cubes.size) {
-            if (cubes[i].isAdjancent(cubes[j])) {
+            if (cubes[i].isAdjacent(cubes[j])) {
                 sides -= 2
             }
         }
