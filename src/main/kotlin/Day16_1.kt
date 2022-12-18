@@ -1,78 +1,39 @@
-import kotlin.math.min
-
 data class Valve(
     val name: String,
     val rate: Int,
     val tunnel: List<String>,
 )
 
-data class Path(
-    val flowSoFar: Int = 0,
-    val history: List<MinuteInfo> = listOf(),
-) {
-    override fun toString(): String {
-        return history.joinToString("\n") { it.toString() } + "\nResult: $flowSoFar"
-    }
-}
-
-sealed class MinuteInfo(
-    open val minute: Int,
-    open val valvesOpen: Set<Valve>,
-) {
-    data class Stay(
-        override val minute: Int,
-        override val valvesOpen: Set<Valve>,
-        val valve: Valve,
-    ): MinuteInfo(minute, valvesOpen) {
-        override fun toString(): String {
-            return super.toString() + "\nYou stay at ${valve.name}"
-        }
-    }
-    data class Open(
-        override val minute: Int,
-        override val valvesOpen: Set<Valve>,
-        val valve: Valve,
-    ): MinuteInfo(minute, valvesOpen) {
-        override fun toString(): String {
-            return super.toString() + "\nYou open ${valve.name}"
-        }
-    }
-    data class Move(
-        override val minute: Int,
-        override val valvesOpen: Set<Valve>,
-        val valveFrom: Valve,
-        val valveTo: Valve,
-        val stepNumber: Int,
-        val stepTotal: Int,
-    ): MinuteInfo(minute, valvesOpen) {
-        override fun toString(): String {
-            return super.toString() + "\nYou move from ${valveFrom.name} to ${valveTo.name} in $stepNumber of $stepTotal step."
-        }
-    }
-
-    override fun toString(): String {
-        return "\n== Minute $minute ==\n" + when {
-            valvesOpen.isEmpty() -> "No valves are open."
-            valvesOpen.size == 1 -> "Valve ${valvesOpen.sortedBy { it.name }.joinToString(", ") { it.name }} is open. Releasing ${valvesOpen.sumOf { it.rate }} pressure."
-            else -> "Valves ${valvesOpen.sortedBy { it.name }.joinToString(", ") { it.name }} are open. Releasing ${valvesOpen.sumOf { it.rate }} pressure."
-        }
-    }
-}
-
 fun main() {
-    val valves = input16.split("\n").map {
-        val (name, rate, connections) = "Valve (.+) has flow rate=(\\d+); tunnel.? lead.? to valve.? (.+)".toRegex().find(it)!!.destructured
+    val valves = input16.split("\n").associate {
+        val (name, rate, connections) = "Valve (.+) has flow rate=(\\d+); tunnel.? lead.? to valve.? (.+)".toRegex()
+            .find(it)!!.destructured
         name to Valve(name, rate.toInt(), connections.split(", "))
-    }.toMap()
+    }
 
     val current = valves["AA"]!!
+    val t0 = System.currentTimeMillis()
+    println(turn2(
+        minutes = 1,
+        current = listOf(current),
+        all = valves,
+        open = setOf(),
+        openNext = setOf(),
+        flowSoFar = 0,
+        move = listOf(MoveSpec.Active()),
+        lastMinute = 30,
+    ))
+    val t1 = System.currentTimeMillis()
     println(turn(
         minutes = 1,
         current = current,
         all = valves,
         open = setOf(),
-        path = Path(),
+        flowSoFar = 0,
+        lastMinute = 30,
     ))
+    val t2 = System.currentTimeMillis()
+    println("Algo #2 - ${t1 - t0}, Algo #1 - ${t2 - t1}")
 }
 
 fun turn(
@@ -80,16 +41,13 @@ fun turn(
     current: Valve,
     all: Map<String, Valve>,
     open: Set<Valve>,
-    path: Path,
-    lastMinute: Int = 30
-): Path {
+    flowSoFar: Int,
+    lastMinute: Int,
+): Int {
     val sorted = all.values.filter { !open.contains(it) && current != it && it.rate > 0 }
 
     if (sorted.isEmpty() || minutes == lastMinute) {
-        return Path(
-            flowSoFar = path.flowSoFar + (lastMinute - minutes) * open.sumOf { it.rate },
-            history = path.history + List(lastMinute + 1 - minutes) { index -> MinuteInfo.Stay(minutes + index, open, current) },
-        )
+        return flowSoFar + (lastMinute - minutes) * open.sumOf { it.rate }
     }
 
     return sorted.map { target ->
@@ -104,22 +62,14 @@ fun turn(
     }.map { pair ->
         val (target, time) = pair
         turn(
-                minutes = minutes + time + 1,
-                current = target,
-                all = all,
-                open = open + target,
-                path = Path(
-                    flowSoFar = path.flowSoFar + (time + 1) * open.sumOf { it.rate } + target.rate,
-                    history = path.history +
-                            List(time) { index -> MinuteInfo.Move(minutes + index, open, current, target, index + 1, time)} +
-                            MinuteInfo.Open(minutes + time, open, target)
-                )
+            minutes = minutes + time + 1,
+            current = target,
+            all = all,
+            open = open + target,
+            flowSoFar = flowSoFar + (time + 1) * open.sumOf { it.rate } + target.rate,
+            lastMinute = lastMinute,
         )
-    }.maxByOrNull { it.flowSoFar } ?:
-        Path(
-            flowSoFar = path.flowSoFar + (lastMinute - minutes) * open.sumOf { it.rate },
-            history = path.history + List(lastMinute + 1 - minutes) { index -> MinuteInfo.Stay(minutes + index, open, current) },
-        )
+    }.maxByOrNull { it } ?: (flowSoFar + (lastMinute - minutes) * open.sumOf { it.rate })
 }
 
 /**

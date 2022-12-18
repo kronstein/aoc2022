@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 18 (1).">
+    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 18.">
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day16_2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day18_2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day16_1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day16_1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day18_1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day18_1.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671355302035</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Day 18.">
+      <created>1671362127556</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1671362127556</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +270,8 @@
     <MESSAGE value="Day 17 (1)." />
     <MESSAGE value="Day 17." />
     <MESSAGE value="Day 18 (1)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 18 (1)." />
+    <MESSAGE value="Day 18." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 18." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AoC2022$Day07_1Kt.ic" NAME="Day07_1Kt Coverage Results" MODIFIED="1670398947444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
