@@ -49,7 +49,7 @@ fun main() {
         rockIndex++
     }
 
-    println(tower.maxByOrNull { it.y}!!.y)
+    println(tower.maxByOrNull { it.y }!!.y)
 }
 
 fun Set<P>.print(fallingRock: List<P>?) {
