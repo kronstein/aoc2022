@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 18.">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day16_2.kt" afterDir="false" />
+    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 16.">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day19_1.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day16_1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day16_1.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +51,11 @@
       <recent name="C:\Users\admin\IdeaProjects\AoC2022\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day18_1Kt">
+  <component name="RunManager" selected="Kotlin.Day19_1Kt">
     <configuration name="Day16_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day16_2Kt" />
       <module name="AoC2022.main" />
       <shortenClasspath name="NONE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day17_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day17_1Kt" />
-      <module name="AoC2022.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,20 +81,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day19_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day19_1Kt" />
+      <module name="AoC2022.main" />
+      <shortenClasspath name="NONE" />
+      <option name="VM_PARAMETERS" value="-Xmx16G" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Kotlin.Day19_1Kt" />
       <item itemvalue="Kotlin.Day18_1Kt" />
       <item itemvalue="Kotlin.Day18_2Kt" />
-      <item itemvalue="Kotlin.Day17_1Kt" />
       <item itemvalue="Kotlin.Day17_2Kt" />
       <item itemvalue="Kotlin.Day16_2Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day19_1Kt" />
         <item itemvalue="Kotlin.Day18_1Kt" />
         <item itemvalue="Kotlin.Day18_2Kt" />
         <item itemvalue="Kotlin.Day16_2Kt" />
         <item itemvalue="Kotlin.Day17_2Kt" />
-        <item itemvalue="Kotlin.Day17_1Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671362127556</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Day 16.">
+      <created>1671363628198</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671363628198</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +279,8 @@
     <MESSAGE value="Day 17." />
     <MESSAGE value="Day 18 (1)." />
     <MESSAGE value="Day 18." />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 18." />
+    <MESSAGE value="Day 16." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 16." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AoC2022$Day07_1Kt.ic" NAME="Day07_1Kt Coverage Results" MODIFIED="1670398947444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
