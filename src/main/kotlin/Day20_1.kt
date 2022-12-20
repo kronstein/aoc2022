@@ -6,16 +6,24 @@ fun main() {
     var result = sequence
     sequence.forEach {
         result = mix(result, it)
-        println(result)
     }
 
-    val zeroAt = result.indexOfFirst { it.n == 0 }
-    println(result[(1000 + zeroAt) % sequence.size].n +
-            result[(2000 + zeroAt) % sequence.size].n +
-            result[(3000 + zeroAt) % sequence.size].n)
+    val zeroAt = result.indexOfFirst { it.value == 0L }
+    println(result[(1000 + zeroAt) % sequence.size].value +
+            result[(2000 + zeroAt) % sequence.size].value +
+            result[(3000 + zeroAt) % sequence.size].value)
 }
 
-class Number(val n: Int) {
+class Number(
+    private val n: Int,
+    private val key: Int = 1,
+) {
+    val value: Long
+        get() = n.toLong() * key.toLong()
+    fun getRotation(clamp: Int): Int {
+        return (value % clamp).toInt()
+    }
+
     override fun toString(): String {
         return n.toString()
     }
@@ -25,9 +33,8 @@ fun mix(seq: List<Number>, i: Number): List<Number> {
     with(seq.toMutableList()) {
         val index = indexOf(i)
         remove(i)
-        Collections.rotate(this, -i.n)
+        Collections.rotate(this, -i.getRotation(size))
         add(index, i)
-        Collections.rotate(this, i.n)
         return this
     }
 }
