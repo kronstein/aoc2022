@@ -27,7 +27,6 @@ fun main() {
     draw[pos.y - 1][pos.x - 1] = '>'
 
     while(pos.remainingPath.isNotEmpty()) {
-        println("x=${pos.x} y=${pos.y} facing=${pos.facing}")
         pos = "^(\\d+)".toRegex().find(pos.remainingPath)?.let {
             val (steps) = it.destructured
             val nextRemainingPath = pos.remainingPath.substring(steps.length)
@@ -95,12 +94,7 @@ fun main() {
         }
     }
 
-    println("Final: x=${pos.x} y=${pos.y} facing=${pos.facing}")
     println("${1000 * pos.y + 4 * pos.x + pos.facing}")
-
-    draw.forEach {
-//        println(it)
-    }
 }
 
 val input22 = """
