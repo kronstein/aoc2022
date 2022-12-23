@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 22 (1).">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day22_2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day23_1.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day22_1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day22_1.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,14 +51,7 @@
       <recent name="C:\Users\admin\IdeaProjects\AoC2022\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day22_2Kt">
-    <configuration name="Day20_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day20_2Kt" />
-      <module name="AoC2022.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day23_1Kt">
     <configuration name="Day21_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day21_1Kt" />
       <module name="AoC2022.main" />
@@ -88,20 +80,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day23_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day23_1Kt" />
+      <module name="AoC2022.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Kotlin.Day23_1Kt" />
       <item itemvalue="Kotlin.Day22_1Kt" />
       <item itemvalue="Kotlin.Day22_2Kt" />
       <item itemvalue="Kotlin.Day21_1Kt" />
       <item itemvalue="Kotlin.Day21_2Kt" />
-      <item itemvalue="Kotlin.Day20_2Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day23_1Kt" />
         <item itemvalue="Kotlin.Day22_2Kt" />
         <item itemvalue="Kotlin.Day22_1Kt" />
         <item itemvalue="Kotlin.Day21_2Kt" />
         <item itemvalue="Kotlin.Day21_1Kt" />
-        <item itemvalue="Kotlin.Day20_2Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671713647673</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Day 22 (1).">
+      <created>1671734336830</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1671734336830</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
