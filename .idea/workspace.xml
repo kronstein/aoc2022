@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 23 (1).">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day24_1.kt" afterDir="false" />
+    <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 24 (1).">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day24_2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day24_1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day24_1.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +52,7 @@
       <recent name="C:\Users\admin\IdeaProjects\AoC2022\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day24_1Kt">
-    <configuration name="Day22_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day22_1Kt" />
-      <module name="AoC2022.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day24_2Kt">
     <configuration name="Day22_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day22_2Kt" />
       <module name="AoC2022.main" />
@@ -87,20 +81,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day24_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day24_2Kt" />
+      <module name="AoC2022.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Kotlin.Day24_2Kt" />
       <item itemvalue="Kotlin.Day24_1Kt" />
       <item itemvalue="Kotlin.Day23_1Kt" />
       <item itemvalue="Kotlin.Day23_2Kt" />
-      <item itemvalue="Kotlin.Day22_1Kt" />
       <item itemvalue="Kotlin.Day22_2Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day24_2Kt" />
         <item itemvalue="Kotlin.Day24_1Kt" />
         <item itemvalue="Kotlin.Day23_2Kt" />
         <item itemvalue="Kotlin.Day23_1Kt" />
         <item itemvalue="Kotlin.Day22_2Kt" />
-        <item itemvalue="Kotlin.Day22_1Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671799175601</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Day 24 (1).">
+      <created>1671902580925</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1671902580926</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,7 +348,8 @@
     <MESSAGE value="Day 21." />
     <MESSAGE value="Day 22 (1)." />
     <MESSAGE value="Day 23 (1)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 23 (1)." />
+    <MESSAGE value="Day 24 (1)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 24 (1)." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AoC2022$Day07_1Kt.ic" NAME="Day07_1Kt Coverage Results" MODIFIED="1670398947444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

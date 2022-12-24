@@ -17,6 +17,11 @@ data class Bounds(
     val bottom: Int,
 )
 
+data class Answer(
+    val minute: Int,
+    val blizzards: List<Blizzard>,
+)
+
 fun main() {
     val blizzards = input24.split("\n").flatMapIndexed { y, line ->
         line.mapIndexedNotNull { x, c ->
@@ -30,8 +35,6 @@ fun main() {
         }
     }
 
-    println(5.adjust(min = 1, max = 4))
-
     val bounds = Bounds(
         left = 1,
         right = input24.indexOf("\n") - 2,
@@ -44,7 +47,7 @@ fun main() {
 
     println("bounds: $bounds start: $start end: $end")
 
-    println(search(0, blizzards, setOf(start), bounds, end))
+    println(search(0, blizzards, setOf(start), bounds, end).minute)
 }
 
 fun search(
@@ -53,13 +56,16 @@ fun search(
     test: Set<Position>,
     bounds: Bounds,
     end: Position,
-): Int {
+): Answer {
     println("\n === Minute #$minute ===")
 
     blizzards.draw(test, bounds)
 
     if (test.contains(end)) { // End of expedition is reached
-        return minute
+        return Answer(
+            minute = minute,
+            blizzards = blizzards,
+        )
     }
 
     val nextTest = test.filter { pos -> blizzards.none { it.x == pos.x && it.y == pos.y } }.flatMap { pos ->
