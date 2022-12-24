@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3fe7a03-26a4-4d55-8dac-34fdb62397dd" name="Changes" comment="Day 23 (1).">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day23_2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day24_1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +51,7 @@
       <recent name="C:\Users\admin\IdeaProjects\AoC2022\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day23_2Kt">
-    <configuration name="Day21_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day21_2Kt" />
-      <module name="AoC2022.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day24_1Kt">
     <configuration name="Day22_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day22_1Kt" />
       <module name="AoC2022.main" />
@@ -86,20 +80,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day24_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day24_1Kt" />
+      <module name="AoC2022.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Kotlin.Day24_1Kt" />
       <item itemvalue="Kotlin.Day23_1Kt" />
       <item itemvalue="Kotlin.Day23_2Kt" />
       <item itemvalue="Kotlin.Day22_1Kt" />
       <item itemvalue="Kotlin.Day22_2Kt" />
-      <item itemvalue="Kotlin.Day21_2Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day24_1Kt" />
         <item itemvalue="Kotlin.Day23_2Kt" />
         <item itemvalue="Kotlin.Day23_1Kt" />
         <item itemvalue="Kotlin.Day22_2Kt" />
         <item itemvalue="Kotlin.Day22_1Kt" />
-        <item itemvalue="Kotlin.Day21_2Kt" />
       </list>
     </recent_temporary>
   </component>
